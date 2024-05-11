@@ -33,21 +33,21 @@ function Register(){
             })
         });
 
-        console.log(response.statusText);
-         const data = await response.json();
-        console.log(data);
+        // console.log(response.statusText);
+        //  const data = await response.json();
+        // console.log(data);
 
-        // if(response.status == 201){
-        //     const data = await response.json();
+        if(response.status == 201){
+            const data = await response.json();
             
-        //     const {token} = data;
+            const {token} = data;
 
-        //     // save token in secure storage
-        //     localStorage.setItem('token', token);
+            // save token in secure storage
+            localStorage.setItem('token', token);
 
-        //     // redirect to home page
-        //     navigate('/new_user', {replace: true});
-        // }
+            // redirect to home page
+            navigate('/new_user', {replace: true});
+        }
             
         } catch (error) {
             alert(error);
