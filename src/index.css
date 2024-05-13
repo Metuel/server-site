@@ -364,18 +364,17 @@
 
 .history{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('./assets/images/70-min-29-1024x461.png');
     background-size: cover;
+    overflow: hidden;
 }
 
-.health-data ul{
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 15px;
-    margin-bottom: 10px;
-    padding: auto;
+.history h1{
+    margin-bottom: 20px;
 }
 
 .health-data ul li h2{
@@ -388,6 +387,47 @@
     color: #333;
     padding: 20px;
     margin-bottom: 0px;
+}
+
+.health-data .data-box {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+.data-box {
+    padding-right: 20px;
+    scrollbar-width: thin;
+    scrollbar-base-color: transparent;
+}
+
+.data-box ::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: orange;
+}
+
+.data-box ::-webkit-scrollbar-thumb{
+    background-color: #888888;
+}
+
+.data-box ::-webkit-scrollbar-thumb:hover{
+    background-color: #555555;
+    cursor: grab;
+}
+
+.data-box ul{
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.data-box li{
+    padding-bottom: 10px;
+    display: block;
 }
 
 .history-content h1{
