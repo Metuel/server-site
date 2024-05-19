@@ -257,13 +257,12 @@ function History(){
                     {selectedData && (
                         <>
                         <p style={pStyle}>Age: {selectedData.age}</p>
-                        <p style={pStyle}>Height: {selectedData.height}</p>
-                        <p style={pStyle}>Weight: {selectedData.weight}</p>
+                        <p style={pStyle}>Diabetes Pedigree Function: {selectedData.diabetes_pedigree_function}</p>
                         <p style={pStyle}>Pregnancies: {selectedData.pregnancies}</p>
                         <p style={pStyle}>Glucose level: {selectedData.glucose_level}</p>
                         <p style={pStyle}>Blood pressure: {selectedData.blood_pressure}</p>
                         <p style={pStyle}>Skin thickness: {selectedData.skin_thickness}</p>
-                        <p style={pStyle}>Insulin level: {selectedData.insulin_level}</p>
+                        <p style={pStyle}>Body Mass Index: {selectedData.body_mass_index}</p>
                         <p style={lastPStyle}>Family history with diabetes: {selectedData.family_diabetes_history}</p>
                         </>
                     )}
